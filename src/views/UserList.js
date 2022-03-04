@@ -32,7 +32,7 @@ export default props => {
                     <ListItem.Subtitle>{user.email}</ListItem.Subtitle>
                 </ListItem.Content>
                 <ListItem.Chevron
-                    onPress={() => navigation.navigate('userForm', user)}
+                    onPress={() => props.navigation.navigate('UserForm', user)}
                     iconProps={{name: "edit"}}
                     iconStyle={{fontSize: 25, color: "orange"}}
                 />
