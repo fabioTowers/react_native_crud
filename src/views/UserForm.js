@@ -1,29 +1,27 @@
 import React, { useState } from 'react'
-import { Text, TextInput, View, StyleSheet, Button } from 'react-native'
+import { View, StyleSheet, Button } from 'react-native'
+import { Input } from 'react-native-elements'
 
 export default ({route, navigation}) => {
     const [user, setUser] = useState(route.params ? route.params : {})
     return (
         <View style={style.form}>
-            <Text>Nome:</Text>
-            <TextInput 
-                style={style.input}
+            <Input 
+                placeholder='Digite...'
                 onChangeText={name => setUser({...user, name})}
-                placeholder=" Digite..."
+                label='Nome'
                 value={user.name}
             />
-            <Text>Email:</Text>
-            <TextInput 
-                style={style.input}
+            <Input 
+                placeholder='Digite...'
                 onChangeText={email => setUser({...user, email})}
-                placeholder=" Digite..."
+                label='Email'
                 value={user.email}
             />
-            <Text>Link da foto de perfil:</Text>
-            <TextInput 
-                style={style.input}
-                onChangeText={avatarUrl => setUser({...user, avatarUrl})}
-                placeholder=" Digite..."
+            <Input 
+                placeholder='Digite...'
+                onChangeText={name => setUser({...user, name})}
+                label='Link da foto de perfil'
                 value={user.avatarUrl}
             />
             <Button 
@@ -39,12 +37,5 @@ export default ({route, navigation}) => {
 const style = StyleSheet.create({
     form: {
         padding: 12,
-    },
-    input: {
-        height: 40,
-        borderColor: 'gray',
-        borderWidth: 1,
-        marginBottom: 10,
-        borderRadius: 15,
     },
 })
