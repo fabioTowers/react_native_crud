@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { View, StyleSheet, Button } from 'react-native'
-import { Input } from 'react-native-elements'
+import { View, StyleSheet } from 'react-native'
+import { Button, Input } from 'react-native-elements'
 
 export default ({route, navigation}) => {
     const [user, setUser] = useState(route.params ? route.params : {})
@@ -26,6 +26,15 @@ export default ({route, navigation}) => {
             />
             <Button 
                 title="Salvar"
+                containerStyle={{
+                    
+                    marginHorizontal: 50,
+                    marginVertical: 10,
+                }}
+                titleStyle={{ fontWeight: 'bold', fontSize: 17 }}
+                buttonStyle={{
+                    borderRadius: 5
+                }}
                 onPress={() => {
                     navigation.goBack()
                 }}
