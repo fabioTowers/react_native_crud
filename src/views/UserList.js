@@ -13,7 +13,7 @@ export default props => {
                 text: 'Sim',
                 onPress() {
                     dispatch({
-                        type: "DeleteUser",
+                        type: "deleteUser",
                         payload: user,
                     })
                 }
