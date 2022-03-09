@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { View, StyleSheet } from 'react-native'
 import { Button, Input } from 'react-native-elements'
+import UsersContext from '../context/UsersContext'
 
 export default ({route, navigation}) => {
     const [user, setUser] = useState(route.params ? route.params : {})
+    const { dispatch } = useContext(UsersContext)
+
     return (
         <View style={style.form}>
             <Input 
@@ -20,7 +23,7 @@ export default ({route, navigation}) => {
             />
             <Input 
                 placeholder='Digite...'
-                onChangeText={name => setUser({...user, name})}
+                onChangeText={avatarUrl => setUser({...user, avatarUrl})}
                 label='Link da foto de perfil'
                 value={user.avatarUrl}
             />
@@ -36,6 +39,10 @@ export default ({route, navigation}) => {
                     borderRadius: 5
                 }}
                 onPress={() => {
+                    dispatch({
+                        type: user.id ? 'updateUser' : 'createUser',
+                        payload: user,
+                    })
                     navigation.goBack()
                 }}
             />
