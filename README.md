@@ -11,11 +11,8 @@ Esse app exibe uma lista de usuários *default* salva em uma classe e o usuário
 
 ### As 4 operações básicas em uma lista de elementos
 
-<img src="img/list_records.png" width="375"/>
-<img src="img/edit_record.png" width="375"/>
-<br/>
-<img src="img/add_record.png" width="375"/>
-<img src="img/delete_record.png" width="375"/>
+<img src="img/list_records.png" width="375"/><img src="img/edit_record.png" width="375"/>
+<img src="img/add_record.png" width="375"/><img src="img/delete_record.png" width="375"/>
 
 ### Download
 
