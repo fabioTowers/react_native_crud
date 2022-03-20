@@ -16,7 +16,9 @@ Esse app exibe uma lista de usuários *default*, salva em uma classe, e o usuár
 
 ### Download
 
-[Clique aqui para baixar a versão para Android.]()
+[Clique aqui para baixar a versão para Android.](https://github.com/fabioTowers/react_native_crud/releases/download/v1.0.0/gerenciamento_de_lista.apk)
+
+Você também pode testar o aplicativo através da plataforma [Expo](https://expo.dev) se tiver o aplicativo [Expo Go](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR&gl=US) instalado em seu *smartphone*. Basta abrir o Expo Go e escanear o QR Code disponível [nesse link](https://expo.dev/@fabiotowers/gerenciamento_de_lista) ou abrindo [este outro link](exp://exp.host/@fabiotowers/gerenciamento_de_lista?release-channel=default) em seu dispositivo móvel.
 
 ---
 
